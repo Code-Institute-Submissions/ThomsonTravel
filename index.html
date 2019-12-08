@@ -6,19 +6,25 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Thomson Travel</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           type="text/css"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
           type="text/css"/>
     <link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
+    <!-- putting this style tag in seems to be the only fix to render google maps.-->
     <style>
         #map {
-            height: 350px;
-            width: 900px;
+            height: 500px;
+            width: 500px;
+            padding: 0;
         }
     </style>
+    <!-- putting in this style tag seems to be the only thing that renders google maps.-->
 </head>
+
 <body>
+<!-- navbar-->
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <a class="navbar-brand" href="#">Thomson Travel</a>
     <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
@@ -29,25 +35,22 @@
     <div class="collapse navbar-collapse" id="navbarNavDropdown navbarColor01">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item"><a class="nav-link" href="">Locations</a></li>
+            <li class="nav-item"><a class="nav-link" href="">Information</a></li>
             <li class="nav-item"><a class="nav-link" href="">contact us</a></li>
         </ul>
 
     </div>
 </nav>
+<!--navbar-->
 
 <!-- picture section -->
 <section>
     <Div class="container-fluid">
         <div class="row col-12">
             <div class="jumbotron  text-center">
-                <h1 class="display-3">Hello, world!</h1>
-                <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra
-                    attention to featured content or information.</p>
-                <hr class="my-4">
-                <p>It uses utility classes for typography and spacing to space content out within the larger
-                    container.</p>
-                <p class="lead">
-                    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                <h1 class="display-3">Your Next great city break is only a few clicks away!</h1>
+
+                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
                 </p>
             </div>
 
@@ -58,19 +61,34 @@
 <hr>
 <!-- map section-->
 <section>
-    <div class="container-fluid">
+    <div class="container loc_button_container">
         <div class="row">
-            <div class="col-6">
-                <div class="btn-group-vertical" data-toggle="buttons">
-                    <button type="button" class="btn btn-primary">Button</button>
-                    <button type="button" class="btn btn-primary">Button</button>
-                    <button type="button" class="btn btn-primary">Button</button>
-                    <button type="button" class="btn btn-primary">Button</button>
+            <div class="col-12 text-center">
+                <div class="btn-group-horizontal" data-toggle="buttons">
+                    <button type="button" class="btn btn-primary btn-lg">London</button>
+                    <button type="button" class="btn btn-primary btn-lg">Paris</button>
+                    <button type="button" class="btn btn-primary btn-lg">Rome</button>
+                    <button type="button" class="btn btn-primary btn-lg">Madrid</button>
 
                 </div>
             </div>
-            <div class=col-6 id="map"></div>
         </div>
+        <hr>
+        <div class="container map_container">
+            <div class="row">
+                <div class="col-12" id="map"></div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-12 text-center">
+            <button type="button" class="btn btn-primary btn-lg">hotels</button>
+            <button type="button" class="btn btn-primary btn-lg">Restaurants</button>
+            <button type="button" class="btn btn-primary btn-lg">Attractions</button>
+
+        </div>
+    </div>
     </div>
 </section>
 <!-- map section -->
@@ -79,13 +97,28 @@
 <section>
     <div class="container-fluid">
         <div class="row">
-            <div class=" col-6 card-container">
+            <div class=" col-3 card-container london_card">
+                <div class="front">Front Side</div>
+                <div class="back">Back Side
+                </div>
+            </div>
+            <div class=" col-3 card-container paris_card">
+                <div class="front">Front Side</div>
+                <div class="back">Back Side
+                </div>
+            </div>
+            <div class=" col-3 card-container rome_card">
+                <div class="front">Front Side</div>
+                <div class="back">Back Side
+                </div>
+            </div>
+            <div class=" col-3 card-container berlin_card">
                 <div class="front">Front Side</div>
                 <div class="back">Back Side
                 </div>
             </div>
 
-            <h2> css flip cards will go here</h2>
+
         </div>
     </div>
 
@@ -122,7 +155,8 @@
 
 
 <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAp2CKg1ufFy45pMLq1EYTZ5nMc1K4G0Xo&callback=initMap"></script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAp2CKg1ufFy45pMLq1EYTZ5nMc1K4G0Xo&callback=initMap"></script>
 <script src="js/maps.js"></script>
 </body>
 
