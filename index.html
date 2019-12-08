@@ -5,20 +5,18 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
     <title>Thomson Travel</title>
-
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           type="text/css"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
           type="text/css"/>
     <link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
-    <script
-            src="https://code.jquery.com/jquery-3.4.1.js"
-            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-            crossorigin="anonymous"></script>
-
+    <style>
+        #map {
+            height: 350px;
+            width: 900px;
+        }
+    </style>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -64,23 +62,14 @@
         <div class="row">
             <div class="col-6">
                 <div class="btn-group-vertical" data-toggle="buttons">
-                    <button type="button" class="btn btn-primary">London</button>
-                    <button type="button" class="btn btn-primary">Paris</button>
-                    <button type="button" class="btn btn-primary">Berlin</button>
-                    <button type="button" class="btn btn-primary">Madrid</button>
+                    <button type="button" class="btn btn-primary">Button</button>
+                    <button type="button" class="btn btn-primary">Button</button>
+                    <button type="button" class="btn btn-primary">Button</button>
+                    <button type="button" class="btn btn-primary">Button</button>
 
                 </div>
             </div>
-            <div class="col-6">
-                <h2> this is where the map is going</h2>
-                <div class="row">
-                    <div>
-                        <button type="button" class="btn btn-primary">Hotels</button>
-                        <button type="button" class="btn btn-primary">Restaurants</button>
-                        <button type="button" class="btn btn-primary">Attractions</button>
-                    </div>
-                </div>
-            </div>
+            <div class=col-6 id="map"></div>
         </div>
     </div>
 </section>
@@ -90,9 +79,13 @@
 <section>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-12">
-                <h2> css flip cards will go here</h2>
+            <div class=" col-6 card-container">
+                <div class="front">Front Side</div>
+                <div class="back">Back Side
+                </div>
             </div>
+
+            <h2> css flip cards will go here</h2>
         </div>
     </div>
 
@@ -104,10 +97,8 @@
 <section>
     <div class="container-fluid">
         <div class="row>">
-            <div class="col-12">
-                <h2> contact form will go here</h2>
-
-
+            <div class="col-12 text-center">
+                <h2>contact form will go here</h2>
             </div>
         </div>
     </div>
@@ -117,17 +108,32 @@
 
 <!--footer-->
 <footer>
-    footer will go here
+    <div class="container-fluid navbar-dark bg-primary">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2> this is footer</h2>
+            </div>
+        </div>
+
+    </div>
 
 </footer>
 <!--footer-->
 
-<script
-        src="https://code.jquery.com/jquery-3.4.1.js"
-        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-        crossorigin="anonymous"></script>
-<script type="text/javascript" src="js/script.js"></script>
-<script src="js/maps.js"></script>
+<script>
+    function initMap() {
+        var map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 3,
+            center: {
+                lat: 46.619261,
+                lng: -33.134766
+            }
+        });
+    }
+</script>
+<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAp2CKg1ufFy45pMLq1EYTZ5nMc1K4G0Xo&callback=initMap"></script>
+
 </body>
 
 </html>
