@@ -1,7 +1,14 @@
 
 
 
-
+.main-container {
+    height: 80vh;
+    background: url(../photos/london.jpg) no-repeat center center;
+    -webkit-background-size: 700px 800px;
+    -moz-background-size: 700px 800px;
+    -o-background-size: 700px 800px;
+    background-size: cover;
+}
 
 
 
