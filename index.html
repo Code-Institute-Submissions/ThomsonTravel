@@ -70,11 +70,24 @@
                 <div id="locationField">
                     <input id="autocomplete" placeholder="enter a city" type="text"/>
                 </div>
+                <div id="controls">
+                    <select id="country">
+                        <option value="Fr">France</option>
+                        <option value="uk" selected>United Kingdom</option>
+                        <option value="es">Spain</option>
+                        <option value="de">Germany</option>
+                    </select>
+                </div>
             </div>
         </div>
         <hr>
         <div class="row">
             <div class="col-12" id="map"></div>
+            <div id="listing">
+                <table id="resultsTable">
+                    <tbody id="results"></tbody>
+                </table>
+            </div>
         </div>
     </div>
     <hr>
@@ -150,7 +163,7 @@
 
 <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
 <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAp2CKg1ufFy45pMLq1EYTZ5nMc1K4G0Xo&callback=initMap"></script>
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAp2CKg1ufFy45pMLq1EYTZ5nMc1K4G0Xo&libraries=places&callback=initMap"></script>
 <script src="js/maps.js"></script>
 </body>
 
