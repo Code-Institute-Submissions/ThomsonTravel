@@ -39,6 +39,20 @@ function initMap() {
      content: document.getElementById('info-content')
  });
 
+autocomplete = new google.maps.places.Autocomplete(
+    /** @type {!HTMLInputElement} */ (
+        document.getElementById('autocomplete')), {
+        types: ['(cities)'],
+        componentRestrictions: countryRestrict
+    });
+places = new google.maps.places.PlacesService(map);
+
+autocomplete.addListener('place_changed', onPlaceChanged);
+
+// Add a DOM event listener to react when the user selects a country.
+document.getElementById('country').addEventListener(
+    'change', setAutocompleteCountry);
+}
 
 
 
