@@ -25,7 +25,7 @@ var countries = {
 
 };
 
-function initMap() {
+function initMap(listener) {
     var map = new google.maps.Map(document.getElementById("map"), {
         zoom: 5,
         center: {
@@ -33,29 +33,66 @@ function initMap() {
             lng: -4.6
         }
     });
- }
 
- infoWindow = new google.maps.InfoWindow({
-     content: document.getElementById('info-content')
- });
 
-autocomplete = new google.maps.places.Autocomplete(
-    /** @type {!HTMLInputElement} */ (
-        document.getElementById('autocomplete')), {
-        types: ['(cities)'],
-        componentRestrictions: countryRestrict
+    infoWindow = new google.maps.InfoWindow({
+        content: document.getElementById('info-content')
     });
-places = new google.maps.places.PlacesService(map);
 
-autocomplete.addListener('place_changed', onPlaceChanged);
+    autocomplete = new google.maps.places.Autocomplete(
+        /** @type {!HTMLInputElement} */ (
+            document.getElementById('autocomplete')), {
+            types: ['(cities)'],
+            componentRestrictions: countryRestrict
+        });
+    places = new google.maps.places.PlacesService(map);
 
-// Add a DOM event listener to react when the user selects a country.
-document.getElementById('country').addEventListener(
-    'change', setAutocompleteCountry);
+    autocomplete.addListener('place_changed', onPlaceChanged);
+
+    document.getElementById('country').addEventListener(
+        'change', setAutocompleteCountry);
 }
 
+function onPlaceChanged() {
+    var place = autocomplete.getPlace();
+    if (place.geometry) {
+        map.panTo(place.geometry.location);
+        map.setZoom(15);
+        search();
+    } else {
+        document.getElementById('autocomplete').placeholder = 'Enter a city';
 
 
+    }
+}
 
+function search() {
+    var search = {
+        bounds: map.getBounds(),
+        types: ['lodgings']
+    };
 
+    places.nearbySearch(search, function(results, status) {
+        if (status === google.maps.places.PlacesServiceStatus.OK) {
+            clearResults();
+            clearMarkers();
+
+            for (var i = 0; i < results.length; i++) {
+                var markerLetter = String.fromCharCode('A'.charCodeAt(0) + (i % 26));
+                var markerIcon = MARKER_PATH + markerLetter + '.png';
+
+                markers[i] = new google.maps.Marker({
+                    position: results[i].geometry.location,
+                    animation: google.maps.Animation.DROP,
+                    icon: markerIcon
+                });
+
+                markers[i].placeResult = results[i];
+                google.maps.event.addListener(markers[i], 'click', showInfoWindow);
+                setTimeout(dropMarker(i), i * 100);
+                addResult(results[i], i);
+            }
+        }
+    });
+}
 
