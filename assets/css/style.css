@@ -13,5 +13,6 @@
 
 /*main picture section*/
 
-
-*location information section*/
+#map {
+    height: 100%;
+}
