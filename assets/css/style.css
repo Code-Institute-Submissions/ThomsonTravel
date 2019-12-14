@@ -1,4 +1,8 @@
-
+#map {
+    height: 500px;
+    width: 500px;
+    padding: 0;
+}
 
 /* main picture section*/
 .main-container {
