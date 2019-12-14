@@ -65,13 +65,13 @@
         <div class="row">
             <div class="col-12 text-center">
                 <div id="hotels">
-                    find hotels in:
+                    choose your destination:
                 </div>
                 <div id="locationField">
-                    <input id="autocomplete" placeholder="enter a city" type="text"/>
+                    <label for="autocomplete"></label><input id="autocomplete" placeholder="enter a city" type="text"/>
                 </div>
                 <div id="controls">
-                    <select id="country">
+                    <label for="country"></label><select id="country">
                         <option value="all">All</option>
                         <option value="au">Australia</option>
                         <option value="br">Brazil</option>
@@ -94,9 +94,7 @@
         <div class="row">
                 <div class="col-12" id="map"></div>
             <hr>
-        </div>
-        <div class="row">
-            <div id="listing">
+            <div class="col-3" id="listing">
                 <table id="resultsTable">
                     <tbody id="results"></tbody>
                 </table>
@@ -132,9 +130,9 @@
     <hr>
     <div class="row">
         <div class="col-12 text-center">
-            <button type="button" class="btn btn-primary btn-lg">hotels</button>
-            <button type="button" class="btn btn-primary btn-lg">Restaurants</button>
-            <button type="button" class="btn btn-primary btn-lg">Attractions</button>
+            <button id="hotel_button" onclick="search()" type="button" class="btn btn-primary btn-lg">hotels</button>
+            <button id=restaurant_button" onclick="search_restaurant()" type="button" class="btn btn-primary btn-lg">Restaurants</button>
+            <button id="attraction_button" onclick="search_attraction()" type="button" class="btn btn-primary btn-lg">Attractions</button>
 
         </div>
     </div>
@@ -142,10 +140,6 @@
 </section>
 <!-- map section -->
 <hr>
-<!-- location info section-->
->
-<hr>
-
 <!-- direct to partner booking site-->
 <section>
     <div class="container-fluid book-now-container">
