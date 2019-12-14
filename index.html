@@ -72,29 +72,31 @@
                 </div>
                 <div id="controls">
                     <label for="country"></label><select id="country">
-                        <option value="all">All</option>
-                        <option value="au">Australia</option>
-                        <option value="br">Brazil</option>
-                        <option value="ca">Canada</option>
-                        <option value="fr">France</option>
-                        <option value="de">Germany</option>
-                        <option value="mx">Mexico</option>
-                        <option value="nz">New Zealand</option>
-                        <option value="it">Italy</option>
-                        <option value="za">South Africa</option>
-                        <option value="es">Spain</option>
-                        <option value="pt">Portugal</option>
-                        <option value="us">U.S.A.</option>
-                        <option value="uk"selected>United Kingdom</option>
-                    </select>
+                    <option value="all">All</option>
+                    <option value="au">Australia</option>
+                    <option value="br">Brazil</option>
+                    <option value="ca">Canada</option>
+                    <option value="fr">France</option>
+                    <option value="de">Germany</option>
+                    <option value="mx">Mexico</option>
+                    <option value="nz">New Zealand</option>
+                    <option value="it">Italy</option>
+                    <option value="za">South Africa</option>
+                    <option value="es">Spain</option>
+                    <option value="pt">Portugal</option>
+                    <option value="us">U.S.A.</option>
+                    <option value="uk" selected>United Kingdom</option>
+                </select>
                 </div>
             </div>
         </div>
         <hr>
         <div class="row">
-                <div class="col-12" id="map"></div>
+            <div class="col-12" id="map"></div>
             <hr>
-            <div class="col-3" id="listing">
+        </div>
+        <div class="row d-none">
+            <div class="" id="listing">
                 <table id="resultsTable">
                     <tbody id="results"></tbody>
                 </table>
@@ -131,8 +133,12 @@
     <div class="row">
         <div class="col-12 text-center">
             <button id="hotel_button" onclick="search()" type="button" class="btn btn-primary btn-lg">hotels</button>
-            <button id=restaurant_button" onclick="search_restaurant()" type="button" class="btn btn-primary btn-lg">Restaurants</button>
-            <button id="attraction_button" onclick="search_attraction()" type="button" class="btn btn-primary btn-lg">Attractions</button>
+            <button id=restaurant_button" onclick="search_restaurant()" type="button" class="btn btn-primary btn-lg">
+                Restaurants
+            </button>
+            <button id="attraction_button" onclick="search_attraction()" type="button" class="btn btn-primary btn-lg">
+                Attractions
+            </button>
 
         </div>
     </div>

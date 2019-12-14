@@ -65,8 +65,8 @@ function initMap() {
         zoom: countries['uk'].zoom,
         center: countries['uk'].center,
         mapTypeControl: false,
-        panControl: false,
-        zoomControl: false,
+        panControl: true,
+        zoomControl: true,
         streetViewControl: false
     });
 
