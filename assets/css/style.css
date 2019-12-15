@@ -7,6 +7,15 @@
 
 /* main picture section*/
 
+.main-container{
+    margin:0;
+    padding:0;
+}
+
+.carousel-item{
+    height: 60vh;
+}
+
 
 
 /*main picture section*/
