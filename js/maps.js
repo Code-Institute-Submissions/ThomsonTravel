@@ -596,3 +596,9 @@ function buildIWContent(place) {
     }
 }
 /* end of tourist attraction section*/
+
+
+$('.carousel').carousel({
+    interval:30
+});
+
