@@ -6,15 +6,10 @@
 
 
 /* main picture section*/
-.main-container {
-    height: 60vh;
-    background: url(../photos/london.jpg) no-repeat bottom right;
-    background-position: center center;
-    -webkit-background-size: 700px 800px;
-    -moz-background-size: 700px 800px;
-    -o-background-size: 700px 800px;
-    background-size: cover;
-}
+ @keyframes slidy {
+
+ }
+
 
 /*main picture section*/
 
