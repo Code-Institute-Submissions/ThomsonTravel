@@ -4,13 +4,29 @@
     padding: 0;
 }
 
+/* main picture section*/
+
+.main-container {
+    margin: 0;
+    padding: 0;
+}
+
+.carousel-item {
+    height: 65vh;
+}
+
+
+/*main picture section*/
+
+
+
 
 /*map section*/
 
 #destination {
     height: 100px;
     font-size: 50px;
-    color: #0a6ebd;
+    color: white;
 }
 
 #autocomplete{
@@ -26,18 +42,14 @@
     padding: 0;
 }
 
-
-/* main picture section*/
-
-.main-container {
-    margin: 0;
-    padding: 0;
+#country{
+    height: 50px;
+    width: 300px;
+    font-size: large;
 }
 
-.carousel-item {
-    height: 65vh;
+.search-btn{
+    height: 100px;
+    width: 200px;
 }
-
-
-/*main picture section*/
 

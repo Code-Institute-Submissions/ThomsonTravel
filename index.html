@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
 </head>
 
-<body class="bg-primary">
+<body>
 <!-- navbar-->
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <a class="navbar-brand" href="#">Thomson Travel</a>
@@ -82,21 +82,22 @@
 <section>
 
     <div class="container-fluid map_container">
-        <div class="row dropdown_row">
+        <div class="row dropdown-row">
             <div class="col-12 text-center">
-                <div class="alert alert-dismissible alert-secondary" id="destination">
+                <div class="alert alert-dismissible alert-primary" id="destination">
                     <strong>Choose from hundreds of destinations below:</strong>
                 </div>
                 <div id="locationField">
-                    <label for="autocomplete"></label><input class="text-center" id="autocomplete" placeholder="enter a city" type="text"/>
+                    <label for="autocomplete"></label><input class="text-center" id="autocomplete"
+                                                             placeholder="enter a city" type="text"/>
                 </div>
             </div>
         </div>
         <hr>
         <div class="row">
-            <div class="text-center col-12">
-                <div id="controls">
-                    <label for="country"></label><select class="btn btn-secondary" id="country">
+            <div class="col-12">
+                <div class="text-center" id="controls">
+                    <label for="country"></label><select class="btn" id="country">
                     <option value="all">All</option>
                     <option value="au">Australia</option>
                     <option value="br">Brazil</option>
@@ -118,8 +119,8 @@
     </div>
 
     <hr>
-    <div class="row">
-        <div class="col-10 offset-1" id="map"></div>
+    <div class="row map-row">
+        <div class="col-12" id="map"></div>
         <hr>
     </div>
     <div class="row d-none">
@@ -156,17 +157,24 @@
         </div>
     </div>
     <hr>
-    <div class="row">
-        <div class="col-12 text-center">
-            <button id="hotel_button" onclick="search()" type="button" class="btn btn-primary btn-lg">hotels</button>
-            <button id=restaurant_button" onclick="search_restaurant()" type="button" class="btn btn-info btn-lg">
-                Restaurants
+    <div class="row button_row">
+        <div class="col-4 text-center">
+            <button id="hotel_button" onclick="search()" type="button" class="btn btn-primary btn-lg search-btn">
+                <i class="fas fa-hotel"></i>hotels
             </button>
-            <button id="attraction_button" onclick="search_attraction()" type="button" class="btn btn-success btn-lg">
-                Attractions
-            </button>
-
         </div>
+        <div class="col-4 text-center">
+            <button id=restaurant_button" onclick="search_restaurant()" type="button" class="btn btn-info btn-lg search-btn">
+                <i class="fas fa-utensils"></i>Restaurants
+            </button>
+        </div>
+        <div class="col-4 text-center">
+            <button id="attraction_button" onclick="search_attraction()" type="button" class="btn btn-success btn-lg search-btn">
+                <i class="fas fa-landmark"></i>Attractions
+            </button>
+        </div>
+
+    </div>
     </div>
 
 </section>
