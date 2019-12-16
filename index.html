@@ -75,28 +75,22 @@
     </div>
 </section>
 <!-- main Picture Section-->
-<hr>
 
 
 <!-- map section-->
-<section>
-
+<section class="map-section">
     <div class="container-fluid map_container">
-        <div class="row dropdown-row">
+        <div class="row dropdown-row align-items-center">
             <div class="col-12 text-center">
-                <div class="alert alert-dismissible alert-primary" id="destination">
-                    <strong>Choose from hundreds of destinations below:</strong>
+                <div id="destination">
+                    <h1>Choose from hundreds of destinations below:</h1>
                 </div>
                 <div id="locationField">
                     <label for="autocomplete"></label><input class="text-center" id="autocomplete"
                                                              placeholder="enter a city" type="text"/>
                 </div>
-            </div>
-        </div>
-        <hr>
-        <div class="row">
-            <div class="col-12">
-                <div class="text-center" id="controls">
+
+                <div class="dropdown text-center" id="controls">
                     <label for="country"></label><select class="btn" id="country">
                     <option value="all">All</option>
                     <option value="au">Australia</option>
@@ -116,70 +110,74 @@
                 </div>
             </div>
         </div>
-    </div>
 
-    <hr>
-    <div class="row map-row">
-        <div class="col-12" id="map"></div>
-        <hr>
-    </div>
-    <div class="row d-none">
-        <div class="" id="listing">
-            <table id="resultsTable">
-                <tbody id="results"></tbody>
-            </table>
+        <div class="row map-row">
+            <div class="col-12" id="map"></div>
+            <hr>
         </div>
-        <div style="display: none">
-            <div id="info-content">
-                <table>
-                    <tr id="iw-url-row" class="iw_table_row">
-                        <td id="iw-icon" class="iw_table_icon"></td>
-                        <td id="iw-url"></td>
-                    </tr>
-                    <tr id="iw-address-row" class="iw_table_row">
-                        <td class="iw_attribute_name">Address:</td>
-                        <td id="iw-address"></td>
-                    </tr>
-                    <tr id="iw-phone-row" class="iw_table_row">
-                        <td class="iw_attribute_name">Telephone:</td>
-                        <td id="iw-phone"></td>
-                    </tr>
-                    <tr id="iw-rating-row" class="iw_table_row">
-                        <td class="iw_attribute_name">Rating:</td>
-                        <td id="iw-rating"></td>
-                    </tr>
-                    <tr id="iw-website-row" class="iw_table_row">
-                        <td class="iw_attribute_name">Website:</td>
-                        <td id="iw-website"></td>
-                    </tr>
+        <div class="row d-none">
+            <div class="" id="listing">
+                <table id="resultsTable">
+                    <tbody id="results"></tbody>
                 </table>
+            </div>
+            <div style="display: none">
+                <div id="info-content">
+                    <table>
+                        <tr id="iw-url-row" class="iw_table_row">
+                            <td id="iw-icon" class="iw_table_icon"></td>
+                            <td id="iw-url"></td>
+                        </tr>
+                        <tr id="iw-address-row" class="iw_table_row">
+                            <td class="iw_attribute_name">Address:</td>
+                            <td id="iw-address"></td>
+                        </tr>
+                        <tr id="iw-phone-row" class="iw_table_row">
+                            <td class="iw_attribute_name">Telephone:</td>
+                            <td id="iw-phone"></td>
+                        </tr>
+                        <tr id="iw-rating-row" class="iw_table_row">
+                            <td class="iw_attribute_name">Rating:</td>
+                            <td id="iw-rating"></td>
+                        </tr>
+                        <tr id="iw-website-row" class="iw_table_row">
+                            <td class="iw_attribute_name">Website:</td>
+                            <td id="iw-website"></td>
+                        </tr>
+                    </table>
+                </div>
             </div>
         </div>
     </div>
-    <hr>
-    <div class="row button_row">
-        <div class="col-4 text-center">
-            <button id="hotel_button" onclick="search()" type="button" class="btn btn-primary btn-lg search-btn">
-                <i class="fas fa-hotel"></i>hotels
-            </button>
-        </div>
-        <div class="col-4 text-center">
-            <button id=restaurant_button" onclick="search_restaurant()" type="button" class="btn btn-info btn-lg search-btn">
-                <i class="fas fa-utensils"></i>Restaurants
-            </button>
-        </div>
-        <div class="col-4 text-center">
-            <button id="attraction_button" onclick="search_attraction()" type="button" class="btn btn-success btn-lg search-btn">
-                <i class="fas fa-landmark"></i>Attractions
-            </button>
-        </div>
-
-    </div>
-    </div>
-
 </section>
-<!-- map section -->
-<hr>
+<!--map section-->
+
+<!--button section-->
+<section class="button section">
+    <div class="container container-fluid button-container">
+        <div class="row button_row">
+            <div class="col-4 text-center">
+                <button id="hotel_button" onclick="search()" type="button"
+                        class="btn btn-primary btn-lg search-btn">
+                    <i class="fas fa-hotel"></i>hotels
+                </button>
+            </div>
+            <div class="col-4 text-center">
+                <button id=restaurant_button" onclick="search_restaurant()" type="button"
+                        class="btn btn-info btn-lg search-btn">
+                    <i class="fas fa-utensils"></i>Restaurants
+                </button>
+            </div>
+            <div class="col-4 text-center">
+                <button id="attraction_button" onclick="search_attraction()" type="button"
+                        class="btn btn-success btn-lg search-btn">
+                    <i class="fas fa-landmark"></i>Attractions
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+<!--button section-->
 
 
 <!-- direct to partner booking site-->

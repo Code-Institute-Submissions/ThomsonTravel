@@ -12,27 +12,29 @@
 }
 
 .carousel-item {
-    height: 65vh;
+    height: 50vh;
 }
 
-
 /*main picture section*/
-
-
 
 
 /*map section*/
 
 #destination {
-    height: 100px;
+    height: 80px;
     font-size: 50px;
-    color: white;
+    margin-bottom: 5px;
 }
 
 #autocomplete{
     height: 50px;
     width: 500px;
     font-size: xx-large;
+    margin-top: 5px;
+}
+
+.dropdown-row{
+    height: 300px;
 }
 
 
@@ -46,10 +48,32 @@
     height: 50px;
     width: 300px;
     font-size: large;
+    margin-top: 20px;
+    text-transform: lowercase;
+}
+
+/*map section*/
+
+/*button section*/
+.button-container{
+    margin-top: 10px;
+}
+
+.fas{
+    padding-right: 5px;
 }
 
 .search-btn{
     height: 100px;
-    width: 200px;
+    width: 300px;
+    font-size: x-large;
+    text-transform: lowercase;
+    border:none;
+
 }
+/* button section*/
+
+
+/*booking section*/
+
 
