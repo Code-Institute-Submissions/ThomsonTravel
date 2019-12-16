@@ -18,7 +18,7 @@
 /*main picture section*/
 
 
-/*map section*/
+/*dropdown section*/
 
 #destination {
     height: 80px;
@@ -36,20 +36,29 @@
     height: 300px;
 }
 
+/*dropdown section*/
+
+/*map section*/
 
 #map {
     height: 500px;
-    width: 500px;
+    width: 900px;
     padding: 0;
+}
+
+.map{
+    border-color: #0a6ebd;
+    border-width: thick;
 }
 
 #country{
     height: 50px;
     width: 300px;
     font-size: large;
-    margin-top: 20px;
+    margin-top: 15px;
     text-transform: lowercase;
 }
+
 
 /*map section*/
 
