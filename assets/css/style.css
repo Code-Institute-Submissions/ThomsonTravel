@@ -111,3 +111,15 @@
     margin-top: 5px;
 }
 /*contact us section*/
+
+/*footer*/
+.footer-container{
+    height: 100px;
+    background-color: #0a6ebd;
+    color: white;
+}
+
+.fab{
+  margin:20px;
+    font-size: x-large;
+}
