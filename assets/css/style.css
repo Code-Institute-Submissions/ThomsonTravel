@@ -5,9 +5,6 @@
 
 }
 
-.navbar{
-    background-color: #0a6ebd;
-}
 
 /*---------------main picture section---------------*/
 
@@ -21,6 +18,8 @@
 }
 
 /*--------------------main picture section---------------------------*/
+
+
 
 
 /*---------------------dropdown section---------------------*/
@@ -46,6 +45,15 @@
     height: 300px;
 }
 
+#country{
+    height: 50px;
+    width: 300px;
+    font-size: large;
+    margin-top: 15px;
+    text-transform: lowercase;
+    background-color: white;
+}
+
 /*---------------dropdown section--------------------*/
 
 
@@ -63,22 +71,13 @@
     padding: 0;
 }
 
-.map{
-    border-color: #0a6ebd;
-    border-width: thick;
-}
-
-#country{
-    height: 50px;
-    width: 300px;
-    font-size: large;
-    margin-top: 15px;
-    text-transform: lowercase;
-    background-color: white;
-}
 
 
 /*----------------------map section----------------------*/
+
+
+
+/*----------------------button section-----------------------*/
 
 /*button section*/
 .button-section{
@@ -104,7 +103,7 @@
 /*--------------------button section-----------------*/
 
 
-/*booking section*/
+/*---------------------booking section----------------------*/
 
 
 .book-now-container{
@@ -125,7 +124,9 @@
 
 /*------------------booking section--------------*/
 
-/*contact us section*/
+
+
+/*------------------contact us section---------------------*/
 .contact-container{
     padding-top: 10px;
     padding-bottom: 10px;
@@ -140,9 +141,11 @@
     margin-top: 5px;
     text-transform: lowercase;
 }
-/*contact us section*/
+/*---------------------contact us section-----------------------*/
 
-/*footer*/
+
+
+/*----------------------footer---------------------*/
 .footer-container{
     height: 100px;
     background-color: #0a6ebd;
@@ -153,3 +156,5 @@
   margin:20px;
     font-size: x-large;
 }
+
+/*---------------------footer------------------------*/
