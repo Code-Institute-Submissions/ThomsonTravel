@@ -2,6 +2,7 @@
 .body {
     margin: 0;
     padding: 0;
+
 }
 
 /* main picture section*/
@@ -20,9 +21,14 @@
 
 /*dropdown section*/
 
+.drop-section{
+    background-color: #B0BEC5;
+}
+
 #destination {
     height: 80px;
     font-size: 50px;
+    color:white;
 
 }
 
@@ -39,6 +45,10 @@
 /*dropdown section*/
 
 /*map section*/
+
+.map-section{
+    background-color: #B0BEC5;
+}
 
 #map {
     height: 500px;
@@ -57,14 +67,19 @@
     font-size: large;
     margin-top: 15px;
     text-transform: lowercase;
+    background-color: white;
 }
 
 
 /*map section*/
 
 /*button section*/
+.button-section{
+    background-color: #B0BEC5;
+}
 .button-container{
-    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .fas{
@@ -84,9 +99,10 @@
 
 /*booking section*/
 
+
 .book-now-container{
     height: 300px;
-    margin-top: 20px;
+    padding-top:20px;
     color: white;
 }
 
@@ -95,7 +111,7 @@
 }
 
 .book-btn{
-    margin-top: 10px;
+    padding-top: 10px;
     text-transform: lowercase;
 }
 
@@ -103,8 +119,10 @@
 
 /*contact us section*/
 .contact-container{
-    margin-top: 10px;
-    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #B0BEC5;
+    color: white;
 }
 
 .enquiry-btn{
