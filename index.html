@@ -33,9 +33,9 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown navbarColor01">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item"><a class="nav-link" href="">search</a></li>
-            <li class="nav-item"><a class="nav-link" href="">book now</a></li>
-            <li class="nav-item"><a class="nav-link" href="">contact us</a></li>
+            <li class="nav-item"><a class="nav-link" href="#autocomplete">search</a></li>
+            <li class="nav-item"><a class="nav-link" href="#book">book now</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">contact us</a></li>
         </ul>
 
     </div>
@@ -190,11 +190,13 @@
 
 <!-- direct to partner booking site-->
 <section>
-    <div class="container-fluid book-now-container align-items-center">
+    <div class="container-fluid book-now-container align-items-center" id="book">
         <div class="row book-now-row">
             <div class="col-12 booking text-center">
                 <h1 class="align-self-center"> Book now through our trusted partner!</h1>
+                <a class="partner-site" href="https://booking.com" target="_blank">
                 <button type="button" class="btn btn-primary btn-lg book-btn">book here</button>
+                </a>
             </div>
         </div>
     </div>
@@ -204,7 +206,7 @@
 
 <!-- contact us section-->
 <section>
-    <div class="container-fluid contact-container">
+    <div class="container-fluid contact-container" id="contact">
         <div class="row contact-row">
             <div class="col-6 offset-3">
                 <h3 class="contact-heading uppercase text-center"> Do you have an enquiry?</h3>
@@ -233,7 +235,7 @@
 
 <!--footer-->
 <footer>
-    <div class="container-fluid footer-container  bg-primary">
+    <div class="container-fluid footer-container">
         <div class="row footer-row align-items-center">
             <div class="col-3 contact-details">
                 <h3>Thomson Travel Ltd</h3>

@@ -9,7 +9,7 @@
     background-color: #0a6ebd;
 }
 
-/* main picture section*/
+/*---------------main picture section---------------*/
 
 .main-container {
     margin: 0;
@@ -20,10 +20,10 @@
     height: 60vh;
 }
 
-/*main picture section*/
+/*--------------------main picture section---------------------------*/
 
 
-/*dropdown section*/
+/*---------------------dropdown section---------------------*/
 
 .drop-section{
     background-color:#0a6ebd;
@@ -46,9 +46,12 @@
     height: 300px;
 }
 
-/*dropdown section*/
+/*---------------dropdown section--------------------*/
 
-/*map section*/
+
+
+
+/*-----------------map section-------------------*/
 
 .map-section{
     background-color:#0a6ebd;
@@ -75,7 +78,7 @@
 }
 
 
-/*map section*/
+/*----------------------map section----------------------*/
 
 /*button section*/
 .button-section{
@@ -98,7 +101,7 @@
     border:none;
 
 }
-/* button section*/
+/*--------------------button section-----------------*/
 
 
 /*booking section*/
@@ -120,7 +123,7 @@
     text-transform: lowercase;
 }
 
-/*booking section*/
+/*------------------booking section--------------*/
 
 /*contact us section*/
 .contact-container{
@@ -135,6 +138,7 @@
 
 .enquiry-btn{
     margin-top: 5px;
+    text-transform: lowercase;
 }
 /*contact us section*/
 
