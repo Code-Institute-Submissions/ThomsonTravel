@@ -54,10 +54,10 @@
                         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                     </ol>
                     <div class="carousel-inner">
-                        <div class="carousel-item active">
+                        <div class="carousel-item">
                             <img src="assets/photos/london.jpg" class="london-img img w-100" alt="london">
                         </div>
-                        <div class="carousel-item">
+                        <div class="carousel-item active">
                             <img src="assets/photos/berlin.jpg" class="berlin-img img w-100" alt="berlin">
                         </div>
                         <div class="carousel-item">
@@ -73,8 +73,8 @@
                         <span class="sr-only">Next</span>
                     </a>
                 </div>
-                <div class="main-text hidden-xs align-items-center">
-                    <div class="col-md-12 text-center">
+                <div class="main-text d-md-12 text-center align-items-center">
+                    <div class=" title-heading text-center">
                         <h1> Your next great city break is only a few clicks away.</h1>
                         <h3>
                             We make finding the top hotels, restaurants and attractions easy.
@@ -176,19 +176,19 @@
 <section class="button-section">
     <div class="container container-fluid button-container">
         <div class="row button_row">
-            <div class="col-md-4 col-12 text-center">
+            <div class="col-4  text-center">
                 <button id="hotel_button" onclick="search()" type="button"
                         class="btn btn-primary btn-lg search-btn">
                     <i class="fas fa-hotel"></i>hotels
                 </button>
             </div>
-            <div class=" col-md-4 col-12 text-center">
+            <div class=" col-4 text-center">
                 <button id=restaurant_button" onclick="search_restaurant()" type="button"
                         class="btn btn-info btn-lg search-btn">
                     <i class="fas fa-utensils"></i>Restaurants
                 </button>
             </div>
-            <div class=" col-md-4 col-12 text-center">
+            <div class=" col-4 text-center">
                 <button id="attraction_button" onclick="search_attraction()" type="button"
                         class="btn btn-success btn-lg search-btn">
                     <i class="fas fa-landmark"></i>Attractions
@@ -206,7 +206,7 @@
         <div class="row book-now-row">
             <div class="col-12 booking text-center">
                 <h1 class="align-self-center"> Book now through our trusted partner!</h1>
-                <a class="partner-site" href="https://booking.com" target="_blank">
+                <a class="partner-site" href="https://booking.com" target="blank">
                     <button type="button" class="btn btn-primary btn-lg book-btn">book here</button>
                 </a>
             </div>
@@ -224,7 +224,7 @@
                 <h3 class="contact-heading uppercase text-center"> Do you have an enquiry?</h3>
                 <h5 class="uppercase text-center">fill in your details below and one of our team will be in touch.</h5>
                 <div class="center-form">
-                    <form onsubmit="return sendMail(this);" method="POST">
+                    <form>
                         <input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required/>
                         <input type="email" name="email" id="emailaddress" class="form-control" placeholder="Email"
                                required/>
