@@ -14,7 +14,7 @@
 }
 
 .carousel-item {
-    height: 80vh;
+    height: 75vh;
 }
 
 .main-text
@@ -140,7 +140,7 @@
 }
 
 .booking{
-    margin-top: 100px;
+    margin-top: 80px;
 }
 
 .book-btn{
@@ -184,3 +184,29 @@
 }
 
 /*---------------------footer------------------------*/
+
+
+/*------ media breaks------*/
+
+@media(max-width: 768px) {
+    .destination-title {
+        font-size: 30px;
+    }
+
+    .search-btn {
+        height: 100px;
+        width: 200px;
+        font-size: large;
+        text-transform: lowercase;
+        border: none;
+    }
+}
+
+    @media (max-width: 1024px) {
+        .carousel-item {
+            height: 40vh;
+        }
+    }
+
+
+
