@@ -17,28 +17,27 @@
     height: 75vh;
 }
 
-.main-text
-{
+.main-text {
     position: absolute;
     top: 50px;
     width: 96.66666666666666%;
-    color:white;
+    color: white;
     padding-top: 50px;
 }
-.btn-min-block
-{
+
+.btn-min-block {
     min-width: 170px;
     line-height: 26px;
 }
-.btn-clear
-{
+
+.btn-clear {
     color: #FFF;
     background-color: transparent;
     border-color: #FFF;
     margin-right: 15px;
 }
-.btn-clear:hover
-{
+
+.btn-clear:hover {
     color: #000;
     background-color: #FFF;
 }
@@ -47,31 +46,30 @@
 /*--------------------main picture section---------------------------*/
 
 
-
 /*---------------------dropdown section---------------------*/
 
-.drop-section{
-    background-color:#0a6ebd;
+.drop-section {
+    background-color: #0a6ebd;
 }
 
 #destination {
     height: 80px;
     font-size: 50px;
-    color:white;
+    color: white;
 
 }
 
-#autocomplete{
+#autocomplete {
     height: 50px;
     width: 500px;
     font-size: xx-large;
 }
 
-.dropdown-row{
+.dropdown-row {
     height: 300px;
 }
 
-#country{
+#country {
     height: 50px;
     width: 300px;
     font-size: large;
@@ -83,12 +81,10 @@
 /*---------------dropdown section--------------------*/
 
 
-
-
 /*-----------------map section-------------------*/
 
-.map-section{
-    background-color:#0a6ebd;
+.map-section {
+    background-color: #0a6ebd;
 }
 
 #map {
@@ -98,52 +94,52 @@
 }
 
 
-
 /*----------------------map section----------------------*/
-
 
 
 /*----------------------button section-----------------------*/
 
 /*button section*/
-.button-section{
-    background-color:#0a6ebd;
+.button-section {
+    background-color: #0a6ebd;
 }
-.button-container{
+
+.button-container {
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
-.fas{
+.fas {
     padding-right: 5px;
 }
 
-.search-btn{
+.search-btn {
     height: 100px;
     width: 300px;
     font-size: x-large;
     text-transform: lowercase;
-    border:none;
+    border: none;
 
 }
+
 /*--------------------button section-----------------*/
 
 
 /*---------------------booking section----------------------*/
 
 
-.book-now-container{
+.book-now-container {
     height: 300px;
-    padding-top:20px;
+    padding-top: 20px;
     color: white;
     background-color: #0a6ebd;
 }
 
-.booking{
+.booking {
     margin-top: 80px;
 }
 
-.book-btn{
+.book-btn {
     padding-top: 10px;
     text-transform: lowercase;
 }
@@ -151,35 +147,34 @@
 /*------------------booking section--------------*/
 
 
-
 /*------------------contact us section---------------------*/
-.contact-container{
+.contact-container {
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: white;
 }
 
-.form-control{
+.form-control {
     color: black;
 }
 
-.enquiry-btn{
+.enquiry-btn {
     margin-top: 5px;
     text-transform: lowercase;
 }
+
 /*---------------------contact us section-----------------------*/
 
 
-
 /*----------------------footer---------------------*/
-.footer-container{
+.footer-container {
     height: 100px;
     background-color: #0a6ebd;
     color: white;
 }
 
-.fab{
-  margin:20px;
+.fab {
+    margin: 20px;
     font-size: x-large;
 }
 
@@ -188,7 +183,7 @@
 
 /*------ media breaks------*/
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
     .destination-title {
         font-size: 30px;
     }
@@ -200,13 +195,18 @@
         text-transform: lowercase;
         border: none;
     }
-}
 
-    @media (max-width: 1024px) {
-        .carousel-item {
-            height: 40vh;
-        }
+    .fab {
+        margin: 5px;
     }
 
+}
 
+@media (max-width: 1024px) {
+    .carousel-item {
+        height: 40vh;
+    }
+}
+
+/*----- media breaks------*/
 
