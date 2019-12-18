@@ -183,11 +183,32 @@
 
 /*------ media breaks------*/
 
+
+@media(max-width:375px){
+    .search-btn{
+    margin-top: 20px;
+
+    }
+
+    #map{
+        height:300px;
+    }
+
+    .booking{
+        margin-top: 20px;
+    }
+
+}
+
+
+
+
+
+
 @media (max-width: 768px) {
     .destination-title {
         font-size: 30px;
     }
-
     .search-btn {
         height: 100px;
         width: 200px;
@@ -195,7 +216,6 @@
         text-transform: lowercase;
         border: none;
     }
-
     .fab {
         margin: 5px;
     }
