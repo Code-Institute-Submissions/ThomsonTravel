@@ -168,7 +168,7 @@
 
 /*----------------------footer---------------------*/
 .footer-container {
-    height: 100px;
+    height: 120px;
     background-color: #0a6ebd;
     color: white;
 }
@@ -184,31 +184,30 @@
 /*------ media breaks------*/
 
 
-@media(max-width:375px){
-    .search-btn{
-    margin-top: 20px;
+@media (max-width: 375px) {
+    .search-btn {
+        margin-top: 20px;
 
     }
 
-    #map{
-        height:300px;
+    #map {
+        height: 400px;
     }
 
-    .booking{
+    .booking {
         margin-top: 20px;
     }
 
+
+
 }
-
-
-
-
 
 
 @media (max-width: 768px) {
     .destination-title {
         font-size: 30px;
     }
+
     .search-btn {
         height: 100px;
         width: 200px;
@@ -216,6 +215,7 @@
         text-transform: lowercase;
         border: none;
     }
+
     .fab {
         margin: 5px;
     }
