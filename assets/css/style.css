@@ -31,6 +31,9 @@
     font-size: 50px;
 }
 
+.title-sub{
+    color: black;
+}
 
 
 .btn-min-block {
@@ -39,8 +42,8 @@
 }
 
 .btn-clear {
-    color: #FFF;
-    background-color: transparent;
+    color:black;
+    background-color:white;
     border-color: #FFF;
     margin-right: 15px;
 }
