@@ -21,11 +21,17 @@
 
 .main-text {
     position: absolute;
-    top: 50px;
+    top: 100px;
     width: 96.66666666666666%;
     color: white;
     padding-top: 50px;
 }
+
+.title-heading{
+    font-size: 50px;
+}
+
+
 
 .btn-min-block {
     min-width: 170px;
