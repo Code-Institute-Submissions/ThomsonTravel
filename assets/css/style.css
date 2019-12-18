@@ -8,6 +8,11 @@
 
 /*---------------main picture section---------------*/
 
+.carousel-item{
+    height: 75vh;
+}
+
+
 .main-container {
     margin: 0;
     padding: 0;
@@ -182,10 +187,15 @@
 
 
 
+@media (max-width: 1024px) {
+    .carousel-item {
+        height: 40vh;
+    }
+
+}
 
 
-
-@media (min-width: 768px) {
+@media (max-width: 768px) {
 
 
     .destination-title {
@@ -200,22 +210,13 @@
         border: none;
     }
 
-    .fab {
-        margin: 5px;
-    }
 
-
-    .carousel-item {
-        height: 40vh;
+    .footer-container{
+        height: 150px;
     }
 }
 
 
-@media (min-width: 1025px) {
-    .carousel-item {
-        height: 75vh;
-    }
-}
 
 
 @media (max-width: 411px) {
@@ -242,9 +243,6 @@
         height: 25vh;
     }
 
-    .footer-container {
-        height: 150px;
-    }
 
     #autocomplete {
         width: 200px;
