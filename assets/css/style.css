@@ -184,7 +184,7 @@
 /*------ media breaks------*/
 
 
-@media (max-width: 375px) {
+@media (max-width: 450px) {
     .search-btn {
         margin-top: 20px;
 
@@ -197,8 +197,6 @@
     .booking {
         margin-top: 20px;
     }
-
-
 
 }
 
