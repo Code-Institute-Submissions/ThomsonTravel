@@ -1,17 +1,17 @@
-#Thomson Travel - Web Design Project
+# Thomson Travel - Web Design Project
 
 
 ## Website overview:
 
 
-##Website functionality:
+## Website functionality:
 
-##User design experience
+## User design experience
 
-##Technologies used:
+## Technologies used:
 
-##Deployment
+## Deployment
 
-##Testing
+## Testing
 
-##Credits
+## Credits
