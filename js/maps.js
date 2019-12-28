@@ -58,6 +58,7 @@ const countries = {
         zoom: 5
     }
 };
+
 function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
         zoom: countries['uk'].zoom,
@@ -82,6 +83,7 @@ function initMap() {
     document.getElementById('country').addEventListener(
         'change', setAutocompleteCountry);
 }
+
 function clearMarkers() {
     for (var i = 0; i < markers.length; i++) {
         if (markers[i]) {
@@ -90,6 +92,7 @@ function clearMarkers() {
     }
     markers = [];
 }
+
 function setAutocompleteCountry() {
     var country = document.getElementById('country').value;
     if (country == 'all') {
@@ -104,11 +107,13 @@ function setAutocompleteCountry() {
     clearResults();
     clearMarkers();
 }
+
 function dropMarker(i) {
     return function () {
         markers[i].setMap(map);
     };
 }
+
 function addResult(result, i) {
     var results = document.getElementById('results');
     var markerLetter = String.fromCharCode('A'.charCodeAt(0) + (i % 26));
@@ -131,12 +136,14 @@ function addResult(result, i) {
     tr.appendChild(nameTd);
     results.appendChild(tr);
 }
+
 function clearResults() {
     var results = document.getElementById('results');
     while (results.childNodes[0]) {
         results.removeChild(results.childNodes[0]);
     }
 }
+
 function showInfoWindow() {
     var marker = this;
     places.getDetails({placeId: marker.placeResult.place_id},
@@ -148,6 +155,7 @@ function showInfoWindow() {
             buildIWContent(place);
         });
 }
+
 function buildIWContent(place) {
     document.getElementById('iw-icon').innerHTML = '<img class="hotelIcon" ' +
         'src="' + place.icon + '" alt=""/>';
@@ -188,6 +196,7 @@ function buildIWContent(place) {
         document.getElementById('iw-website-row').style.display = 'none';
     }
 }
+
 function onPlaceChanged() {
     var place = autocomplete.getPlace();
     if (place.geometry) {
@@ -198,6 +207,7 @@ function onPlaceChanged() {
         document.getElementById('autocomplete').placeholder = 'Enter a city';
     }
 }
+
 function search() {
     const search = {
         bounds: map.getBounds(),
@@ -205,6 +215,7 @@ function search() {
     };
     complete_search(search)
 }
+
 function search_attraction() {
     const search = {
         bounds: map.getBounds(),
@@ -212,6 +223,7 @@ function search_attraction() {
     };
     complete_search(search)
 }
+
 function search_restaurant() {
     const search = {
         bounds: map.getBounds(),
@@ -219,6 +231,7 @@ function search_restaurant() {
     };
     complete_search(search)
 }
+
 function complete_search(search) {
     places.nearbySearch(search, function (results, status) {
         if (status === google.maps.places.PlacesServiceStatus.OK) {

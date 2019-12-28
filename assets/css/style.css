@@ -1,12 +1,12 @@
 /*general section*/
 
-body{
+body {
     overflow-x: hidden;
 }
 
 /*---------------main picture section---------------*/
 
-.carousel-item{
+.carousel-item {
     height: 75vh;
 }
 
@@ -25,11 +25,11 @@ body{
     padding-top: 50px;
 }
 
-.title-heading{
+.title-heading {
     font-size: 50px;
 }
 
-.title-sub{
+.title-sub {
     color: black;
 }
 
@@ -40,8 +40,8 @@ body{
 }
 
 .btn-clear {
-    color:black;
-    background-color:white;
+    color: black;
+    background-color: white;
     border-color: #FFF;
     margin-right: 15px;
 }
@@ -192,8 +192,8 @@ body{
 
 /*------ media breaks------*/
 
-@media (min-width: 1440px){
-    .carousel-item{
+@media (min-width: 1440px) {
+    .carousel-item {
         height: 60vh;
     }
 }
@@ -223,22 +223,21 @@ body{
     }
 
 
-    .footer-container{
+    .footer-container {
         height: 150px;
     }
 }
 
 
-
-
 @media (max-width: 411px) {
-    .main-text{
+    .main-text {
         display: none;
     }
 
-    #map{
+    #map {
         height: 300px;
     }
+
     .search-btn {
         margin-top: 20px;
         width: 100px;
@@ -265,5 +264,6 @@ body{
         font-size: 25px;
     }
 }
+
 /*----- media breaks------*/
 
