@@ -1,5 +1,8 @@
 /*general section*/
 
+html{
+    scroll-behavior: smooth;
+}
 body {
     overflow-x: hidden;
 }
