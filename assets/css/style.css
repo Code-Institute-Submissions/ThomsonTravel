@@ -194,6 +194,11 @@
 
 /*------ media breaks------*/
 
+@media (min-width: 1440px){
+    .carousel-item{
+        height: 60vh;
+    }
+}
 
 
 @media (max-width: 1024px) {
@@ -262,6 +267,5 @@
         font-size: 25px;
     }
 }
-
 /*----- media breaks------*/
 
