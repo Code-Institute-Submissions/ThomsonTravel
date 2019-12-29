@@ -12,7 +12,8 @@ The website is fully functional on desktop and smaller screens with the same con
 
 
 ## User design experience
-To view my user design experience please visit the User design experience folder where i have documents for strategy,scope and structure, and skeleton.
+**To view my user design experience please visit the User design experience folder link below where I have documents for strategy,scope and structure, and skeleton -**
+[user design experience](https://github.com/cthoms1993/ThomsonTravel/tree/master/user%20design%20experience)
 
 ## Technologies used:
 * HTML5
