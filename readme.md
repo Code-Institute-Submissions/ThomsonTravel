@@ -50,7 +50,7 @@ The Google map API , and javascript buttons for narrowing the search terms where
 For future improvement i would like to have the map tear drop markers match the colour of the selection buttons.
 JS was tested and validated using JShint. 
 
-##Bugs 
+## Bugs 
 The navigation menu when on smaller screens does not auto-collapse, for future versions i would fix this. 
 
 
