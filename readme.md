@@ -48,6 +48,11 @@ The site was tested locally and on GITHUB pages using Chrome development tools.
 It was tested on landscape and portrait mode on Google pixel 2, Google pixel 3, Galaxy S5, Nexus 5S, Nexus 6P, iPhone 7, iPhone 7 Plus, iPhone 8, iPhone 8 Plus, iPhone X, iPad, iPad Pro and responsive desktop.
 The Google map API , and javascript buttons for narrowing the search terms where tested locally and remotely as was the enquire here modal. 
 For future improvement i would like to have the map tear drop markers match the colour of the selection buttons.
+JS was tested and validated using JShint. 
+
+##Bugs 
+The navigation menu when on smaller screens does not auto-collapse, for future versions i would fix this. 
+
 
 
 ## Credits
