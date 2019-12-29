@@ -1,4 +1,4 @@
-/*general section*/
+/*---------------general section-------------------*/
 
 html{
     scroll-behavior: smooth;
@@ -55,10 +55,10 @@ body {
 }
 
 
-/*--------------------main picture section---------------------------*/
+/*---------------main picture section-------------*/
 
 
-/*---------------------dropdown section---------------------*/
+/*----------------dropdown section--------------*/
 
 .drop-section {
     background-color: #0a6ebd;
@@ -90,7 +90,7 @@ body {
     background-color: white;
 }
 
-/*---------------dropdown section--------------------*/
+/*---------------dropdown section-----------------*/
 
 
 /*-----------------map section-------------------*/
@@ -106,10 +106,10 @@ body {
 }
 
 
-/*----------------------map section----------------------*/
+/*------------------map section----------------*/
 
 
-/*----------------------button section-----------------------*/
+/*-----------------button section--------------*/
 
 /*button section*/
 .button-section {
@@ -137,7 +137,7 @@ body {
 /*--------------------button section-----------------*/
 
 
-/*---------------------booking section----------------------*/
+/*---------------------booking section----------------*/
 
 
 .book-now-container {
@@ -159,7 +159,7 @@ body {
 /*------------------booking section--------------*/
 
 
-/*------------------contact us section---------------------*/
+/*------------------contact us section-------------*/
 .contact-container {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -175,7 +175,7 @@ body {
     text-transform: lowercase;
 }
 
-/*---------------------contact us section-----------------------*/
+/*------------contact us section----------*/
 
 
 /*----------------------footer---------------------*/
@@ -193,7 +193,7 @@ body {
 /*---------------------footer------------------------*/
 
 
-/*------ media breaks------*/
+/*----------------media breaks------------------*/
 
 @media (min-width: 1440px) {
     .carousel-item {
@@ -268,5 +268,5 @@ body {
     }
 }
 
-/*----- media breaks------*/
+/*--------------- media breaks-----------------*/
 

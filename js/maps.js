@@ -79,11 +79,10 @@ function initMap() {
         });
     places = new google.maps.places.PlacesService(map);
     autocomplete.addListener('place_changed', onPlaceChanged);
-    // Add a DOM event listener to react when the user selects a country.
+    // Added a DOM event listener to react when the user selects a country.
     document.getElementById('country').addEventListener(
         'change', setAutocompleteCountry);
 }
-
 function clearMarkers() {
     for (var i = 0; i < markers.length; i++) {
         if (markers[i]) {
@@ -197,6 +196,8 @@ function buildIWContent(place) {
     }
 }
 
+
+
 function onPlaceChanged() {
     var place = autocomplete.getPlace();
     if (place.geometry) {
@@ -240,7 +241,6 @@ function complete_search(search) {
             for (var i = 0; i < results.length; i++) {
                 var markerLetter = String.fromCharCode('A'.charCodeAt(0) + (i % 26));
                 var markerIcon = MARKER_PATH + markerLetter + '.png';
-                // Use marker animation to drop the icons incrementally on the map.
                 markers[i] = new google.maps.Marker({
                     position: results[i].geometry.location,
                     animation: google.maps.Animation.DROP,
